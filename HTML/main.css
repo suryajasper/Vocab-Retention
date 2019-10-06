@@ -1,0 +1,54 @@
+.btn{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+body{
+  background: #000000;
+}
+
+button{
+  color:#FFFFFF;
+  background-color:#555555;
+}
+
+button:focus {outline:0;}
+
+.check{
+  height:80vh;
+  align: center;
+  float:left;
+}
+
+input{
+  width: 300px;
+  height: 40px;
+  font-size:20pt;
+  color:#FFFFFF;
+  background-color:#555555;
+}
+
+input:focus {outline:0;}
+
+textarea{
+  width: 80vw;
+  height: 80vh;
+  font-size:10pt;
+  color:#FFFFFF;
+  background-color:#555555;
+  float:left;
+}
+
+#color{
+  color:#FF0000;
+}
+
+textarea:focus {outline:0;}
