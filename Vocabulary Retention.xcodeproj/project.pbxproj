@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D3445EE2349014F00581A7A /* GoogleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3445ED2349014F00581A7A /* GoogleDictionary.swift */; };
+		8DCA8B3D2348496E00914734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B3C2348496E00914734 /* AppDelegate.swift */; };
+		8DCA8B3F2348496E00914734 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B3E2348496E00914734 /* RootViewController.swift */; };
+		8DCA8B412348496E00914734 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B402348496E00914734 /* DataViewController.swift */; };
+		8DCA8B432348496E00914734 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B422348496E00914734 /* ModelController.swift */; };
+		8DCA8B462348496E00914734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA8B442348496E00914734 /* Main.storyboard */; };
+		8DCA8B482348497000914734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA8B472348497000914734 /* Assets.xcassets */; };
+		8DCA8B4B2348497000914734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCA8B492348497000914734 /* LaunchScreen.storyboard */; };
+		8DCA8B562348497000914734 /* Vocabulary_RetentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B552348497000914734 /* Vocabulary_RetentionTests.swift */; };
+		8DCA8B612348497000914734 /* Vocabulary_RetentionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B602348497000914734 /* Vocabulary_RetentionUITests.swift */; };
+		8DCA8B6F234851A300914734 /* DefineWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA8B6E234851A300914734 /* DefineWordViewController.swift */; };
+		8DCA8BB023486BD400914734 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCA8BAF23486BD400914734 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DCA8B522348497000914734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DCA8B312348496E00914734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DCA8B382348496E00914734;
+			remoteInfo = "Vocabulary Retention";
+		};
+		8DCA8B5D2348497000914734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DCA8B312348496E00914734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DCA8B382348496E00914734;
+			remoteInfo = "Vocabulary Retention";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D3445ED2349014F00581A7A /* GoogleDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDictionary.swift; sourceTree = "<group>"; };
+		8DCA8B392348496E00914734 /* Vocabulary Retention.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocabulary Retention.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCA8B3C2348496E00914734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DCA8B3E2348496E00914734 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8DCA8B402348496E00914734 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		8DCA8B422348496E00914734 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		8DCA8B452348496E00914734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DCA8B472348497000914734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DCA8B4A2348497000914734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DCA8B4C2348497000914734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCA8B512348497000914734 /* Vocabulary RetentionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulary RetentionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCA8B552348497000914734 /* Vocabulary_RetentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary_RetentionTests.swift; sourceTree = "<group>"; };
+		8DCA8B572348497000914734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCA8B5C2348497000914734 /* Vocabulary RetentionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulary RetentionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCA8B602348497000914734 /* Vocabulary_RetentionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary_RetentionUITests.swift; sourceTree = "<group>"; };
+		8DCA8B622348497000914734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCA8B6E234851A300914734 /* DefineWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineWordViewController.swift; sourceTree = "<group>"; };
+		8DCA8BAF23486BD400914734 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DCA8B362348496E00914734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA8BB023486BD400914734 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B4E2348497000914734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B592348497000914734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DCA8B302348496E00914734 = {
+			isa = PBXGroup;
+			children = (
+				8DCA8B3B2348496E00914734 /* Vocabulary Retention */,
+				8DCA8B542348497000914734 /* Vocabulary RetentionTests */,
+				8DCA8B5F2348497000914734 /* Vocabulary RetentionUITests */,
+				8DCA8B3A2348496E00914734 /* Products */,
+				8DCA8BAE23486BD400914734 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8DCA8B3A2348496E00914734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA8B392348496E00914734 /* Vocabulary Retention.app */,
+				8DCA8B512348497000914734 /* Vocabulary RetentionTests.xctest */,
+				8DCA8B5C2348497000914734 /* Vocabulary RetentionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DCA8B3B2348496E00914734 /* Vocabulary Retention */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA8B402348496E00914734 /* DataViewController.swift */,
+				8DCA8B6E234851A300914734 /* DefineWordViewController.swift */,
+				8D3445ED2349014F00581A7A /* GoogleDictionary.swift */,
+				8DCA8B442348496E00914734 /* Main.storyboard */,
+				8DCA8B492348497000914734 /* LaunchScreen.storyboard */,
+				8DCA8B3C2348496E00914734 /* AppDelegate.swift */,
+				8DCA8B3E2348496E00914734 /* RootViewController.swift */,
+				8DCA8B422348496E00914734 /* ModelController.swift */,
+				8DCA8B472348497000914734 /* Assets.xcassets */,
+				8DCA8B4C2348497000914734 /* Info.plist */,
+			);
+			path = "Vocabulary Retention";
+			sourceTree = "<group>";
+		};
+		8DCA8B542348497000914734 /* Vocabulary RetentionTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA8B552348497000914734 /* Vocabulary_RetentionTests.swift */,
+				8DCA8B572348497000914734 /* Info.plist */,
+			);
+			path = "Vocabulary RetentionTests";
+			sourceTree = "<group>";
+		};
+		8DCA8B5F2348497000914734 /* Vocabulary RetentionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA8B602348497000914734 /* Vocabulary_RetentionUITests.swift */,
+				8DCA8B622348497000914734 /* Info.plist */,
+			);
+			path = "Vocabulary RetentionUITests";
+			sourceTree = "<group>";
+		};
+		8DCA8BAE23486BD400914734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DCA8BAF23486BD400914734 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DCA8B382348496E00914734 /* Vocabulary Retention */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCA8B652348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary Retention" */;
+			buildPhases = (
+				8DCA8B352348496E00914734 /* Sources */,
+				8DCA8B362348496E00914734 /* Frameworks */,
+				8DCA8B372348496E00914734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vocabulary Retention";
+			productName = "Vocabulary Retention";
+			productReference = 8DCA8B392348496E00914734 /* Vocabulary Retention.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DCA8B502348497000914734 /* Vocabulary RetentionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCA8B682348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary RetentionTests" */;
+			buildPhases = (
+				8DCA8B4D2348497000914734 /* Sources */,
+				8DCA8B4E2348497000914734 /* Frameworks */,
+				8DCA8B4F2348497000914734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DCA8B532348497000914734 /* PBXTargetDependency */,
+			);
+			name = "Vocabulary RetentionTests";
+			productName = "Vocabulary RetentionTests";
+			productReference = 8DCA8B512348497000914734 /* Vocabulary RetentionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DCA8B5B2348497000914734 /* Vocabulary RetentionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCA8B6B2348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary RetentionUITests" */;
+			buildPhases = (
+				8DCA8B582348497000914734 /* Sources */,
+				8DCA8B592348497000914734 /* Frameworks */,
+				8DCA8B5A2348497000914734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DCA8B5E2348497000914734 /* PBXTargetDependency */,
+			);
+			name = "Vocabulary RetentionUITests";
+			productName = "Vocabulary RetentionUITests";
+			productReference = 8DCA8B5C2348497000914734 /* Vocabulary RetentionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DCA8B312348496E00914734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Surya Jasper";
+				TargetAttributes = {
+					8DCA8B382348496E00914734 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					8DCA8B502348497000914734 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8DCA8B382348496E00914734;
+					};
+					8DCA8B5B2348497000914734 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8DCA8B382348496E00914734;
+					};
+				};
+			};
+			buildConfigurationList = 8DCA8B342348496E00914734 /* Build configuration list for PBXProject "Vocabulary Retention" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DCA8B302348496E00914734;
+			productRefGroup = 8DCA8B3A2348496E00914734 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DCA8B382348496E00914734 /* Vocabulary Retention */,
+				8DCA8B502348497000914734 /* Vocabulary RetentionTests */,
+				8DCA8B5B2348497000914734 /* Vocabulary RetentionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DCA8B372348496E00914734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA8B4B2348497000914734 /* LaunchScreen.storyboard in Resources */,
+				8DCA8B482348497000914734 /* Assets.xcassets in Resources */,
+				8DCA8B462348496E00914734 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B4F2348497000914734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B5A2348497000914734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DCA8B352348496E00914734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA8B6F234851A300914734 /* DefineWordViewController.swift in Sources */,
+				8DCA8B3F2348496E00914734 /* RootViewController.swift in Sources */,
+				8DCA8B432348496E00914734 /* ModelController.swift in Sources */,
+				8DCA8B412348496E00914734 /* DataViewController.swift in Sources */,
+				8D3445EE2349014F00581A7A /* GoogleDictionary.swift in Sources */,
+				8DCA8B3D2348496E00914734 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B4D2348497000914734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA8B562348497000914734 /* Vocabulary_RetentionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCA8B582348497000914734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCA8B612348497000914734 /* Vocabulary_RetentionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DCA8B532348497000914734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DCA8B382348496E00914734 /* Vocabulary Retention */;
+			targetProxy = 8DCA8B522348497000914734 /* PBXContainerItemProxy */;
+		};
+		8DCA8B5E2348497000914734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DCA8B382348496E00914734 /* Vocabulary Retention */;
+			targetProxy = 8DCA8B5D2348497000914734 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DCA8B442348496E00914734 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCA8B452348496E00914734 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DCA8B492348497000914734 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCA8B4A2348497000914734 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DCA8B632348497000914734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DCA8B642348497000914734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DCA8B662348497000914734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary Retention/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-Retention";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8DCA8B672348497000914734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary Retention/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-Retention";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8DCA8B692348497000914734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary RetentionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-RetentionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulary Retention.app/Vocabulary Retention";
+			};
+			name = Debug;
+		};
+		8DCA8B6A2348497000914734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary RetentionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-RetentionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulary Retention.app/Vocabulary Retention";
+			};
+			name = Release;
+		};
+		8DCA8B6C2348497000914734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary RetentionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-RetentionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vocabulary Retention";
+			};
+			name = Debug;
+		};
+		8DCA8B6D2348497000914734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9ZPR84UT5;
+				INFOPLIST_FILE = "Vocabulary RetentionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "surya.Vocabulary-RetentionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vocabulary Retention";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DCA8B342348496E00914734 /* Build configuration list for PBXProject "Vocabulary Retention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCA8B632348497000914734 /* Debug */,
+				8DCA8B642348497000914734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DCA8B652348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary Retention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCA8B662348497000914734 /* Debug */,
+				8DCA8B672348497000914734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DCA8B682348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary RetentionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCA8B692348497000914734 /* Debug */,
+				8DCA8B6A2348497000914734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DCA8B6B2348497000914734 /* Build configuration list for PBXNativeTarget "Vocabulary RetentionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCA8B6C2348497000914734 /* Debug */,
+				8DCA8B6D2348497000914734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DCA8B312348496E00914734 /* Project object */;
+}
