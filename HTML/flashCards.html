@@ -4,31 +4,20 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <table>
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>
-              <a href="index.html" class="btn">Add Word</a>
-            </td>
-            <td>
-              <a href="articles.html" class="btn">Advanced Article Reading</a>
-            </td>
-            <td>
-              <a href="flashCards.html" class="btn">Flash Cards</a>
-            </td>
-            <td>
-              <a href="essay.html" class="btn">Essay</a>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr><td>
-      <canvas id="kdraw" width="600px" height="600px"></canvas>
+    <div class ="center-outside">
+      <div class = "header-outer">
+        <header class = "header">
+          <a href="index.html" class="btn">Add Word</a>
+          <a href="articles.html" class="btn">Advanced Article Reading</a>
+          <a href="flashCards.html" class="btn">Flash Cards</a>
+          <a href="essay.html" class="btn">Essay</a>
+        </header>
+      </div>
+      <div class = "centered">
+        <canvas id="kdraw" width="600px" height="600px"></canvas>
+      </div>
+    </div>
       <script src="kdraw.min.js"></script>
       <script src="flashcards.js"></script>
-    </td></tr>
   </body>
 </html>

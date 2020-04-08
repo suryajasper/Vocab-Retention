@@ -1,28 +1,25 @@
 let text = document.getElementById("definition");
 let defs = [];
-var words = [];
-var defins = [];
+var defins = {};
 
 function init(){
-  if(localStorage.getItem('words')!==null){
-    words=localStorage.getItem('words').split("spacingForThisToWork");
+  if(localStorage.getItem('definitions')!==null){
+    console.log(localStorage.getItem('definitions'));
+    defins = localStorage.getItem('defins');
   }
-  if(localStorage.getItem('defins')!==null){
-    defins=localStorage.getItem('defins').split("spacingForThisToWork");
-  }
+  console.log(defins);
 }
 init();
 
 
 function saveData(){
-  localStorage.setItem('words',words.join("spacingForThisToWork"));
-  localStorage.setItem('defins',defins.join("spacingForThisToWork"));
+  localStorage.setItem('definitions', JSON.stringify(defins));
 }
 
 function getDictionary(word){
   defs=[];
   let request = new XMLHttpRequest();
-  request.open('GET','https://googledictionaryapi.eu-gb.mybluemix.net/?define='+word+'&lang=en',true);
+  request.open('GET','https://googledictionaryapi.eu-gb.mybluemix.net/?define='+word.toLowerCase()+'&lang=en',true);
   request.onload = function(){
     let data = JSON.parse(this.response);
     if (request.status >= 200 && request.status < 400) {
@@ -58,6 +55,7 @@ function displayDefinition(){
       let tr = document.createElement("tr");
       let td = document.createElement("td");
       let button = document.createElement("button");
+      button.style.animation = 'defAnim 1s';
       button.innerHTML = defs[d];
       button.onclick = function(){
         addWord(document.getElementById("word").value,defs[d]);
@@ -76,16 +74,14 @@ function displayDefinition(){
 //add word to array
 function addWord(word,definition){
   let exists = false;
-  for(let i = 0;i<defins.length;i++){
-    if(definition===defins[i]){
+  for(let i = 0;i<Object.values(defins).length;i++){
+    if(definition===Object.values(defins)[i]){
       exists=true;
     }
   }
   if(!exists){
-    words.push(word);
-    defins.push(definition);
+    defins[word] = definition;
     saveData();
-    console.log("new word added:"+words[words.length-1])
   }
 }
 

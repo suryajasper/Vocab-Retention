@@ -4,32 +4,21 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <table>
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>
-              <a href="index.html" class="btn">Add Word</a>
-            </td>
-            <td>
-              <a href="articles.html" class="btn">Advanced Article Reading</a>
-            </td>
-            <td>
-              <a href="flashCards.html" class="btn">Flash Cards</a>
-            </td>
-            <td>
-              <a href="essay.html" class="btn">Essay</a>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr><td>
-      <input id="word"></input>
-      <button onclick="getDictionary(document.getElementById('word').value)">definition</button>
-      <table id="definition"></table>
-      <script src="main.js"></script>
-    </td></tr>
+    <div class ="center-outside">
+      <div class = "header-outer">
+        <header class = "header">
+          <a href="index.html" class="btn">Add Word</a>
+          <a href="articles.html" class="btn">Advanced Article Reading</a>
+          <a href="flashCards.html" class="btn">Flash Cards</a>
+          <a href="essay.html" class="btn">Essay</a>
+        </header>
+      </div>
+      <div class = "centered">
+        <input placeholder = "word" id="word"></input>
+        <button onclick="getDictionary(document.getElementById('word').value)">definition</button>
+        <table id="definition"></table>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
